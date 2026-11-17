@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorite Games</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    color: white;
+    background:
+        radial-gradient(ellipse at top left, #123d83, transparent 45%),
+        radial-gradient(ellipse at bottom right, #28145b, transparent 45%),
+        #080d1b;
+    min-height: 100vh;
+    padding: 45px 7%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* العنوان */
+
+header {
+    text-align: right;
+    margin-bottom: 45px;
+    border-right: 5px solid #28c5ff;
+    padding-right: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 15px #168cff;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #a8c8ec;
+    font-size: 16px;
+}
+
+/* الألعاب */
+
+.game {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 30px;
+    padding: 22px;
+    background: rgba(19, 34, 65, 0.75);
+    border: 1px solid rgba(64, 174, 255, 0.35);
+    border-radius: 18px;
+    box-shadow: 0 0 15px rgba(0, 130, 255, 0.12);
+    transition: 0.3s;
+}
+
+.game:hover {
+    border-color: #37caff;
+    box-shadow: 0 0 22px rgba(30, 160, 255, 0.35);
+    transform: translateY(-3px);
+}
+
+/* الصور */
+
+.logo {
+    width: 230px;
+    height: 145px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 2px solid #32baff;
+    box-shadow: 0 0 12px #168cff;
+    background: #111d38;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* النصوص */
+
+.info {
+    flex: 1;
+    text-align: right;
+    direction: rtl;
+}
+
+.info h2 {
+    font-size: 23px;
+    color: #48caff;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.info p {
+    color: #d8e5f5;
+    font-size: 17px;
+    line-height: 2;
+}
+
+
+@media (max-width: 650px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    .game {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        height: 190px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+}
+a{
+    text-decoration: none;
+    
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>FAVORITE GAMES</h1>
+    <p>ألعابي المفضلة وعالم من المتعة والتحدي</p>
+</header>
+
+<!-- FORTNITE -->
+<a href="https://www.fortnite.com/">
+<div class="game">
+
+    <div class="logo">
+        <img src="fortnite.jpg" alt="Fortnite">
+    </div>
+
+    <div class="info">
+        <h2>FORTNITE</h2>
+        <p>
+            فورتنايت لعبة جماعية مليئة بالحماس والتحدي،
+            يتنافس فيها اللاعبون للبقاء حتى النهاية،
+            وتجمع بين القتال والبناء والاستراتيجية
+            في عالم مليء بالمغامرات.
+        </p>
+    </div>
+
+</div>
+</a>
+<!-- ROCKET LEAGUE -->
+<a href="https://www.rocketleague.com/">
+<div class="game">
+
+    <div class="logo">
+        <img src="download.jpg" alt="Rocket League">
+    </div>
+
+    <div class="info">
+        <h2>ROCKET LEAGUE</h2>
+        <p>
+            روكت ليق لعبة رياضية مميزة تجمع بين كرة القدم
+            والسيارات السريعة، حيث يستخدم اللاعبون سيارات
+            مزودة بالصواريخ لتسجيل الأهداف والفوز بالمباريات،
+            وتعتمد على المهارة والسرعة والعمل الجماعي.
+        </p>
+    </div>
+
+</div>
+</a>
+<!-- FIFA -->
+<a href="https://www.ea.com/games/ea-sports-fc/fc-26">
+<div class="game">
+
+    <div class="logo">
+        <img src="EA SPORTS FC 26_ Lo Último Oficial que Debes Saber.jpg" alt="FIFA">
+    </div>
+
+    <div class="info">
+        <h2>FIFA</h2>
+        <p>
+            فيفا لعبة كرة قدم تتيح للاعبين اختيار فرقهم
+            المفضلة والتحكم بأشهر نجوم كرة القدم،
+            وخوض مباريات وتحديات كروية ممتعة
+            في أجواء مليئة بالمنافسة والحماس.
+        </p>
+    </div>
+
+</div>
+</a>
+
+<!-- GTA -->
+<a href="https://www.rockstargames.com/gta-v/">
+<div class="game">
+
+    <div class="logo">
+        <img src="Wallpaper GTA VI.jpg" alt="Grand Theft Auto">
+    </div>
+
+    <div class="info">
+        <h2>GRAND THEFT AUTO</h2>
+        <p>
+            قراند لعبة عالم مفتوح تتيح للاعبين استكشاف
+            المدن وقيادة السيارات وتنفيذ المهام المختلفة،
+            مع حرية التجول وخوض المغامرات والتفاعل
+            مع عالم مليء بالأحداث والتفاصيل.
+        </p>
+    </div>
+
+</div>
+</a>
+</div>
+
+</body>
+</html>
